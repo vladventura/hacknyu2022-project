@@ -1,0 +1,92 @@
+[
+    {
+        "lat": 42.351324,
+        "lon": -71.060249,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.351245,
+        "lon": -71.060167,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.351289,
+        "lon": -71060488,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.350841,
+        "lon": -71.060633,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.351436,
+        "lon": -71.061099,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.352115,
+        "lon": -71.060503,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.352008,
+        "lon": -71.060042,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.352491,
+        "lon": -71.060278,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.352491,
+        "lon": -71.060278,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.352466,
+        "lon": -71.059459,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.352165,
+        "lon": -71.059309,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.351763,
+        "lon": -71.058541,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.351258,
+        "lon": -71.058516,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.351603,
+        "lon": -71.057820,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.350715,
+        "lon": -71.057487,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.350892,
+        "lon": -71.058219,
+        "type": "recyclebin"
+    },
+    {
+        "lat": 42.349060,
+        "lon": -71.058002,
+        "type": "trashcan"
+    },
+    {
+        "lat": 42.350149,
+        "lon": -71.060900,
+        "type": "trashcan"
+    }
+]
