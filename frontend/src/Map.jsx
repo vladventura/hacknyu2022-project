@@ -1,6 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import './Map.css';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import UserMarker from './UserMarker';
 
 const MapView = ({ disposals, userLat, userLon }) => {
     return <div className='map-container'>
@@ -13,6 +14,7 @@ const MapView = ({ disposals, userLat, userLon }) => {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <UserMarker lat={51.505} lng={ -0.09}/>
         </MapContainer>
     </div>
 
