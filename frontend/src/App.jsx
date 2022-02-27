@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import MapView from './Map';
 
 const App = () => {
 
@@ -20,9 +21,7 @@ const App = () => {
     <div className="App">
       {disposals.length <= 0? <div>Nothing to see</div> 
       : 
-      disposals.map(disposal => <div key={disposal.lat}>
-        {disposal.lat} : {disposal.lon} =&gt; {disposal['dis_from_origin']}
-      </div>)
+      <MapView />
       }
     </div>
   );
