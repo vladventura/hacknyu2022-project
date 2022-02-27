@@ -4,12 +4,24 @@ import MapView from './Map';
 
 const App = () => {
 
-  const [disposals, setDisposals] = useState([]);
+  const [disposals, setDisposals] = useState(null);
   const [distance, setDistance] = useState(0.5);
   const [userLat, setUserLat] = useState(42.3513);
   const [userLon, setUserLon] = useState(-71.0603);
 
+  const setUserPosition = (position) => {
+    setUserLat(position.coords.latitude);
+    setUserLon(position.coords.longitude);
+  };
+
   useEffect(() => {
+
+    if ('geolocation' in navigator) {
+      console.log("Geolocation information available.");
+      navigator.geolocation.getCurrentPosition(setUserPosition);
+      navigator.geolocation.watchPosition(setUserPosition);
+    }
+
     axios.get(`http://localhost:5000/disposals?lat=${userLat}&lon=${userLon}&dis=${distance}`)
       .then(res => {
         const { data } = res.data;
@@ -19,9 +31,9 @@ const App = () => {
 
   return (
     <div className="App">
-      {disposals.length <= 0? <div>Nothing to see</div> 
+      {disposals == null? <div>Loading...</div> 
       : 
-      <MapView userLat={userLat} userLon={userLon} />
+      <MapView userLat={userLat} userLon={userLon} disposals={disposals} />
       }
     </div>
   );
